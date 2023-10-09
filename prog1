@@ -5,3 +5,4 @@ def afficherPlateau(p, gagnant=None):
     print("---+---+---")
     print(" " + p[3] + " | " + p[4] + " | " + p[5] + " ")
     print("---+---+---")
+    print(" " + p[6] + " | " + p[7] + " | " + p[8] + " ")
