@@ -10,3 +10,7 @@ def afficherPlateau(p, gagnant=None):
 
     if gagnant:
         print("Win")
+
+def morpion():
+    joueur = "X"
+    tour = 0
