@@ -14,3 +14,7 @@ def afficherPlateau(p, gagnant=None):
 def morpion():
     joueur = "X"
     tour = 0
+
+    if plateau[move] == " ":
+            plateau[move] = joueur
+            tour += 1
