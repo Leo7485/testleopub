@@ -18,3 +18,9 @@ def morpion():
     if plateau[move] == " ":
             plateau[move] = joueur
             tour += 1
+
+if tour == 9:
+            print("Égalité")
+            break
+
+        joueur = "O" if joueur == "X" else "X"  # on change de joueur
