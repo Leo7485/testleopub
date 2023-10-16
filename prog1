@@ -24,3 +24,7 @@ if tour == 9:
             break
 
         joueur = "O" if joueur == "X" else "X"  # on change de joueur
+move = "droite"
+move2 = "gauche"
+move3 = "haut"
+move4 = "bas"
