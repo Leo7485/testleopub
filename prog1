@@ -29,5 +29,7 @@ move2 = "gauche"
 move3 = "haut"
 move4 = "bas"
 
-if(move == "droite")
+if(move == "droite"):
     plateau[move] = 1
+if(move == "gauche"):
+    print("don't go left")
