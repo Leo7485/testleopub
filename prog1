@@ -35,3 +35,5 @@ if(move == "gauche"):
     print("don't go left")
 if(move == "haut"):
     plateau[move] = 5
+if(move == "bas"):
+    plateau[move] = 3
