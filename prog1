@@ -24,6 +24,7 @@ if tour == 9:
             break
 
         joueur = "O" if joueur == "X" else "X"  # on change de joueur
+
 move = "droite"
 move2 = "gauche"
 move3 = "haut"
@@ -31,9 +32,12 @@ move4 = "bas"
 
 if(move == "droite"):
     plateau[move] = 1
-if(move == "gauche"):
+elif(move == "gauche"):
     print("don't go left")
-if(move == "haut"):
+elif(move == "haut"):
     plateau[move] = 5
-if(move == "bas"):
+elif(move == "bas"):
     plateau[move] = 3
+else:
+    break
+
