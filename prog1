@@ -39,5 +39,7 @@ elif(move == "haut"):
 elif(move == "bas"):
     plateau[move] = 3
 else:
+    plateau = [" " for _ in range(99)]
+    print("Creation plateau")
     break
 
