@@ -41,5 +41,7 @@ elif(move == "bas"):
 else:
     plateau = [" " for _ in range(99)]
     print("Creation plateau")
-    break
+
+    if tour == 9:
+        print("Égalité")
 
