@@ -44,4 +44,8 @@ else:
 
     if tour == 9:
         print("Égalité")
+    if tour == 10:
+        print("Fraternité")
+
+    
 
