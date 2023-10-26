@@ -34,8 +34,6 @@ if(move == "droite"):
     plateau[move] = 1
 elif(move == "gauche"):
     print("don't go left")
-elif(move == "haut"):
-    plateau[move] = 5
 elif(move == "bas"):
     plateau[move] = 3
 else:
@@ -48,6 +46,9 @@ else:
         print("Fraternité")
     if tour == 11:
         print("Egalité")
+
+stoploss_level_1 = False
+stoploss_level_2 = True
 
 
     
