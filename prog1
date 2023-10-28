@@ -39,9 +39,6 @@ elif(move == "bas"):
 else:
     plateau = [" " for _ in range(99)]
     print("Creation plateau")
-
-    if tour == 10:
-        print("Fraternité")
     if tour == 11:
         print("Egalité")
 
@@ -51,6 +48,7 @@ position_opening_next_candle_is_open = False
 stoploss_level_1 = False
 stoploss_level_2 = True
 
+takeprofit_level = 5
 
 
 
