@@ -1,3 +1,6 @@
+import pandas
+import time 
+
 plateau = [" " for _ in range(9)]
 
 def afficherPlateau(p, gagnant=None):
