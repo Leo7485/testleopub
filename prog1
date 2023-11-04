@@ -20,7 +20,7 @@ def morpion():
 
     if plateau[move] == " ":
             plateau[move] = joueur
-            tour += 1
+            tour += 10
 
 if tour == 9:
             print("Égalité")
@@ -34,11 +34,11 @@ move3 = "haut"
 move4 = "bas"
 
 if(move == "droite"):
-    plateau[move] = 10
+    plateau[move] = 110
 elif(move == "gauche"):
     print("don't go left")
 elif(move == "bas"):
-    plateau[move] = 30
+    plateau[move] = 300
 else:
     plateau = [" " for _ in range(99)]
     print("Creation plateau")
@@ -47,6 +47,7 @@ else:
 
 position_opening_next_candle_time = False
 position_opening_next_candle_is_open = True
+
 stoploss_level_1 = False
 stoploss_level_2 = True
 
@@ -59,5 +60,10 @@ sell_level_min = 32000
 sell_level_max = sell_level_min - (3/100) * sell_level_min
 
 print(f"\nDémarrage du robot BTC ({time.strftime('%X')})\n")
-    
+
+while (bot_in_action == True) :
+
+    try :
+
+        unix_timestamp_for_21 = int(time.time())-(21*5*60)
 
