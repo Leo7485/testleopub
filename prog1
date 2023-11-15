@@ -12,7 +12,7 @@ def afficherPlateau(p, gagnant=None):
     print(" " + p[6] + " | " + p[7] + " | " + p[8] + " ")
 
     if gagnant:
-        print("Win")
+        print("Happy life to you")
 
 def morpion():
     joueur = "X"
@@ -22,7 +22,7 @@ def morpion():
             plateau[move] = joueur
             tour += 10
 
-if tour == 9:
+if tour == 5:
             print("Égalité")
             break
 
