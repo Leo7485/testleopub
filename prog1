@@ -14,10 +14,12 @@ def afficherPlateau(p, gagnant=None):
     print(" " + p[9] + " | " + p[10] + " | " + p[18] + " ")
     print("---+---+---")
     print(" " + p[78] + " | " + p[56] + " | " + p[1] + " ")
+    print("---+---+---")
+    print(" " + p[1] + " | " + p[89] + " | " + p[23] + " ")
 
 
     if gagnant:
-        print("Happy life to you")
+        print("Happy life to you or notvv")
 
 def morpion():
     joueur = "X"
