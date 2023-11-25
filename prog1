@@ -16,14 +16,15 @@ def afficherPlateau(p, gagnant=None):
     print(" " + p[78] + " | " + p[56] + " | " + p[1] + " ")
     print("---+---+---")
     print(" " + p[1] + " | " + p[89] + " | " + p[23] + " ")
+    print("---+---+---")
 
 
     if gagnant:
-        print("Happy life to you or notvv")
+        print("Happy life to you or not !")
 
 def morpion():
-    joueur = "X"
-    tour = 1
+    joueur = "TRDFF"
+    tour = 4
 
     if plateau[move] == " ":
             plateau[move] = joueur
@@ -38,7 +39,7 @@ if tour == 12:
 move = "gauche 1"
 move2 = "gauche 2"
 move3 = "haut 1"
-move4 = "haut 2"
+move4 = "haut 55"
 
 if(move == "droite"):
     plateau[move] = 110
