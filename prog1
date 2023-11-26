@@ -37,20 +37,20 @@ if tour == 12:
         joueur = "O" if joueur == "X" else "X"  # on change de joueur
 
 move = "gauche 1"
-move2 = "gauche 2"
+move2 = "gauche 299"
 move3 = "haut 1"
-move4 = "haut 55"
+move4 = "haut 559"
 
 if(move == "droite"):
-    plateau[move] = 110
+    plateau[move] = 144
 elif(move == "gauche"):
     print("don't go left")
 elif(move == "bas"):
     plateau[move] = 2500
 else:
-    plateau = [" " for _ in range(99)]
+    plateau = [" " for _ in range(57)]
     print("Creation plateau")
-    if tour == 8:
+    if tour == 9:
         print("Egalité")
 
 position_opening_next_candle_time = False
