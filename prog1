@@ -42,11 +42,11 @@ move3 = "haut 1"
 move4 = "haut 559"
 
 if(move == "droite"):
-    plateau[move] = 144
+    plateau[move] = 15
 elif(move == "gauche"):
     print("don't go left")
 elif(move == "bas"):
-    plateau[move] = 2500
+    plateau[move] = 15
 else:
     plateau = [" " for _ in range(57)]
     print("Creation plateau")
@@ -59,12 +59,12 @@ position_opening_next_candle_is_open = True
 stoploss_level_1 = False
 stoploss_level_2 = False
 
-takeprofit_level = 9554
+takeprofit_level = 10250
 
-buy_level_min = 15788
+buy_level_min = 15650
 buy_level_max = buy_level_min + (2.75/100) * buy_level_min
 
-sell_level_min = 38445
+sell_level_min = 38550
 sell_level_max = sell_level_min - (3.45/100) * sell_level_min
 
 print(f"\nDémarrage du robot BTC ({time.strftime('%X')})\n")
