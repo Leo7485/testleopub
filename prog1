@@ -3,8 +3,9 @@ import time
 
 plateau = [" " for _ in range(10)]
 
-def afficherPlateau(p, gagnant=None):
+def afficherPlateau(p, gagnant=True):
 
+    print("------")
     print(" " + p[0] + " | " + p[1] + " | " + p[2] + " ")
     print("---+---+---")
     print(" " + p[3] + " | " + p[4] + " | " + p[5] + " ")
@@ -16,7 +17,7 @@ def afficherPlateau(p, gagnant=None):
     print(" " + p[78] + " | " + p[56] + " | " + p[1] + " ")
     print("---+---+---")
     print(" " + p[1] + " | " + p[89] + " | " + p[23] + " ")
-    print("---+---+---")
+    print("------")
 
 
     if gagnant:
@@ -48,15 +49,15 @@ elif(move == "gauche"):
 elif(move == "bas"):
     plateau[move] = 150
 else:
-    plateau = [" " for _ in range(57)]
+    plateau = [" " for _ in range(45)]
     print("Creation plateau")
     if tour == 9:
         print("Egalité")
 
 position_opening_next_candle_time = True
-position_opening_next_candle_is_open = True
+position_opening_next_candle_is_open = False
 
-stoploss_level_1 = False
+stoploss_level_1 = True
 stoploss_level_2 = False
 
 takeprofit_level = 10250
