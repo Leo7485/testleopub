@@ -40,7 +40,7 @@ if tour == 12:
 move = "gauche 1"
 move2 = "gauche 299"
 move3 = "haut 1"
-move4 = "haut 559"
+move4 = "haut 5"
 
 if(move == "droite"):
     plateau[move] = 15
@@ -60,13 +60,13 @@ position_opening_next_candle_is_open = False
 stoploss_level_1 = True
 stoploss_level_2 = False
 
-takeprofit_level = 10250
+takeprofit_level = 10300
 
 buy_level_min = 15500
-buy_level_max = buy_level_min + (5.45/100) * buy_level_min
+buy_level_max = buy_level_min + (4.90/100) * buy_level_min
 
-sell_level_min = 38500
-sell_level_max = sell_level_min - (2.95/100) * sell_level_min
+sell_level_min = 38700
+sell_level_max = sell_level_min - (3.87/100) * sell_level_min
 
 print(f"\nDémarrage du robot BTC ({time.strftime('%X')})\n")
 
