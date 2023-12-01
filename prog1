@@ -1,7 +1,7 @@
 import pandas
 import time 
 
-plateau = [" " for _ in range(10)]
+plateau = [" " for _ in range(9)]
 
 def afficherPlateau(p, gagnant=True):
 
@@ -24,12 +24,12 @@ def afficherPlateau(p, gagnant=True):
         print("Happy life to you or not !")
 
 def morpion():
-    joueur = "TRDFF"
-    tour = 4
+    joueur = "player_1"
+    tour = 10
 
     if plateau[move] == " ":
             plateau[move] = joueur
-            tour += 10
+            tour += 5
 
 if tour == 12:
             print("Égalité")
@@ -51,7 +51,7 @@ elif(move == "bas"):
 else:
     plateau = [" " for _ in range(45)]
     print("Creation plateau")
-    if tour == 9:
+    if tour == 42:
         print("Egalité")
 
 position_opening_next_candle_time = True
@@ -62,10 +62,10 @@ stoploss_level_2 = False
 
 takeprofit_level = 10300
 
-buy_level_min = 15500
-buy_level_max = buy_level_min + (4.90/100) * buy_level_min
+buy_level_min = 15520
+buy_level_max = buy_level_min + (3.90/100) * buy_level_min
 
-sell_level_min = 38700
+sell_level_min = 38780
 sell_level_max = sell_level_min - (3.87/100) * sell_level_min
 
 print(f"\nDémarrage du robot BTC ({time.strftime('%X')})\n")
