@@ -43,11 +43,11 @@ move3 = "haut 1"
 move4 = "haut 5"
 
 if(move == "droite"):
-    plateau[move] = 15
+    plateau[move] = 2
 elif(move == "gauche"):
     print("don't go left")
 elif(move == "bas"):
-    plateau[move] = 150
+    plateau[move] = 1
 else:
     plateau = [" " for _ in range(45)]
     print("Creation plateau")
@@ -62,10 +62,10 @@ stoploss_level_2 = False
 
 takeprofit_level = 10300
 
-buy_level_min = 15520
+buy_level_min = 18500
 buy_level_max = buy_level_min + (3.55/100) * buy_level_min
 
-sell_level_min = 38780
+sell_level_min = 38600
 sell_level_max = sell_level_min - (3.87/100) * sell_level_min
 
 print(f"\nDémarrage du robot BTC ({time.strftime('%X')})\n")
@@ -96,3 +96,6 @@ while (bot_in_action == True) :
 
         bollinger_up = moving_average + 1.5 * standart_deviation
         bollinger_down = moving_average - 1.5 * standart_deviation
+
+        round_bollinger_up = round(bollinger_up,1)
+        round_bollinger_down = round(bollinger_down,1)
